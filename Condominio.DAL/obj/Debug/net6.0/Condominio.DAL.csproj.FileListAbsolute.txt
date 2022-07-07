@@ -1,0 +1,17 @@
+C:\SistemaCurso\Condominio\Condominio.DAL\bin\Debug\net6.0\Condominio.DAL.deps.json
+C:\SistemaCurso\Condominio\Condominio.DAL\bin\Debug\net6.0\Condominio.DAL.runtimeconfig.json
+C:\SistemaCurso\Condominio\Condominio.DAL\bin\Debug\net6.0\Condominio.DAL.dll
+C:\SistemaCurso\Condominio\Condominio.DAL\bin\Debug\net6.0\Condominio.DAL.pdb
+C:\SistemaCurso\Condominio\Condominio.DAL\bin\Debug\net6.0\Condominio.BLL.dll
+C:\SistemaCurso\Condominio\Condominio.DAL\bin\Debug\net6.0\Condominio.BLL.pdb
+C:\SistemaCurso\Condominio\Condominio.DAL\obj\Debug\net6.0\Condominio.DAL.csproj.AssemblyReference.cache
+C:\SistemaCurso\Condominio\Condominio.DAL\obj\Debug\net6.0\Condominio.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\SistemaCurso\Condominio\Condominio.DAL\obj\Debug\net6.0\Condominio.DAL.AssemblyInfoInputs.cache
+C:\SistemaCurso\Condominio\Condominio.DAL\obj\Debug\net6.0\Condominio.DAL.AssemblyInfo.cs
+C:\SistemaCurso\Condominio\Condominio.DAL\obj\Debug\net6.0\Condominio.DAL.csproj.CoreCompileInputs.cache
+C:\SistemaCurso\Condominio\Condominio.DAL\obj\Debug\net6.0\Condominio.DAL.csproj.CopyComplete
+C:\SistemaCurso\Condominio\Condominio.DAL\obj\Debug\net6.0\Condominio.DAL.dll
+C:\SistemaCurso\Condominio\Condominio.DAL\obj\Debug\net6.0\refint\Condominio.DAL.dll
+C:\SistemaCurso\Condominio\Condominio.DAL\obj\Debug\net6.0\Condominio.DAL.pdb
+C:\SistemaCurso\Condominio\Condominio.DAL\obj\Debug\net6.0\Condominio.DAL.genruntimeconfig.cache
+C:\SistemaCurso\Condominio\Condominio.DAL\obj\Debug\net6.0\ref\Condominio.DAL.dll

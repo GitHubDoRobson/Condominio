@@ -1,0 +1,14 @@
+C:\SistemaCurso\Condominio\Condomino.BLL\bin\Debug\net6.0\Condominio.BLL.deps.json
+C:\SistemaCurso\Condominio\Condomino.BLL\bin\Debug\net6.0\Condominio.BLL.runtimeconfig.json
+C:\SistemaCurso\Condominio\Condomino.BLL\bin\Debug\net6.0\Condominio.BLL.dll
+C:\SistemaCurso\Condominio\Condomino.BLL\bin\Debug\net6.0\Condominio.BLL.pdb
+C:\SistemaCurso\Condominio\Condomino.BLL\obj\Debug\net6.0\Condominio.BLL.csproj.AssemblyReference.cache
+C:\SistemaCurso\Condominio\Condomino.BLL\obj\Debug\net6.0\Condominio.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\SistemaCurso\Condominio\Condomino.BLL\obj\Debug\net6.0\Condominio.BLL.AssemblyInfoInputs.cache
+C:\SistemaCurso\Condominio\Condomino.BLL\obj\Debug\net6.0\Condominio.BLL.AssemblyInfo.cs
+C:\SistemaCurso\Condominio\Condomino.BLL\obj\Debug\net6.0\Condominio.BLL.csproj.CoreCompileInputs.cache
+C:\SistemaCurso\Condominio\Condomino.BLL\obj\Debug\net6.0\Condominio.BLL.dll
+C:\SistemaCurso\Condominio\Condomino.BLL\obj\Debug\net6.0\refint\Condominio.BLL.dll
+C:\SistemaCurso\Condominio\Condomino.BLL\obj\Debug\net6.0\Condominio.BLL.pdb
+C:\SistemaCurso\Condominio\Condomino.BLL\obj\Debug\net6.0\Condominio.BLL.genruntimeconfig.cache
+C:\SistemaCurso\Condominio\Condomino.BLL\obj\Debug\net6.0\ref\Condominio.BLL.dll

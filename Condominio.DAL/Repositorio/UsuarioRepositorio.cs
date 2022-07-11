@@ -60,7 +60,7 @@ namespace Condominio.DAL.Repositorio
             }
         }
 
-        public  int VerificarExiteRegistro()
+        public  int VerificarExisteRegistro()
         {
             try
             {

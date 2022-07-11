@@ -1,4 +1,7 @@
+using Condominio.BLL.Models;
 using Condominio.DAL;
+using Condominio.DAL.Interface;
+using Condominio.DAL.Repositorio;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,6 +9,14 @@ var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<Contexto>(options =>
     options.UseSqlServer(connectionString));
+
+builder.Services.AddIdentity<Usuario, Funcao>().AddEntityFrameworkStores<Contexto>();
+
+builder.Services.AddAuthentication();
+
+
+
+builder.Services.AddTransient<IUsuarioRepositorio, UsuarioRepositorio>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -24,6 +35,8 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 

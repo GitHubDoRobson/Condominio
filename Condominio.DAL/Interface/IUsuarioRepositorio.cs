@@ -10,7 +10,7 @@ namespace Condominio.DAL.Interface
 {
     public interface IUsuarioRepositorio : IRepositorioGenerico<Usuario>
     {
-        int VerificarExiteRegistro();
+        int VerificarExisteRegistro();
 
         Task LogarUsuario(Usuario usuario, bool lembrar);
 

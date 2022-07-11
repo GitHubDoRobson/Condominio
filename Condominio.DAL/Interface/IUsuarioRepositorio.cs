@@ -1,4 +1,5 @@
 ﻿using Condominio.BLL.Models;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,5 +10,12 @@ namespace Condominio.DAL.Interface
 {
     public interface IUsuarioRepositorio : IRepositorioGenerico<Usuario>
     {
+        int VerificarExiteRegistro();
+
+        Task LogarUsuario(Usuario usuario, bool lembrar);
+
+        Task<IdentityResult> CriarUsuario(Usuario usuario, String senha);
+
+        Task IncluirUsuarioFuncao (Usuario usuario, string funcao);
     }
 }

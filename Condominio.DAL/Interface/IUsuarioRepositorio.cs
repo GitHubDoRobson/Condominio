@@ -10,12 +10,9 @@ namespace Condominio.DAL.Interface
 {
     public interface IUsuarioRepositorio : IRepositorioGenerico<Usuario>
     {
-        int VerificarExisteRegistro();
-
+        int VerificarseExisteRegistro();
         Task LogarUsuario(Usuario usuario, bool lembrar);
-
-        Task<IdentityResult> CriarUsuario(Usuario usuario, String senha);
-
-        Task IncluirUsuarioFuncao (Usuario usuario, string funcao);
+        Task<IdentityResult> CriarUsuario(Usuario usuario, string senha);
+        Task IncluirUsuarioEmFuncao(Usuario usuario, string funcao);
     }
 }

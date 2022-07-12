@@ -14,10 +14,10 @@ namespace Condominio.DAL.Repositorio
         private readonly Contexto _contexto;
         private readonly UserManager<Usuario> _gerenciadorUsuarios;
         private readonly SignInManager<Usuario> _gerenciadorLogin;
-        public UsuarioRepositorio(Contexto contexto, UserManager<Usuario> gerenciadorUsuarios, SignInManager<Usuario> gerenciadorLogin) : base(contexto)
+        public UsuarioRepositorio(Contexto contexto, UserManager<Usuario> gerenciadorUsuario, SignInManager<Usuario> gerenciadorLogin) : base(contexto)
         {
             _contexto = contexto;
-            _gerenciadorUsuarios = gerenciadorUsuarios;
+            _gerenciadorUsuarios = gerenciadorUsuario;
             _gerenciadorLogin = gerenciadorLogin;
         }
 
@@ -26,25 +26,25 @@ namespace Condominio.DAL.Repositorio
             try
             {
                 return await _gerenciadorUsuarios.CreateAsync(usuario, senha);
-
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
+
                 throw ex;
             }
         }
 
-        public async Task IncluirUsuarioFuncao(Usuario usuario, string funcao)
+        public async Task IncluirUsuarioEmFuncao(Usuario usuario, string funcao)
         {
             try
             {
                 await _gerenciadorUsuarios.AddToRoleAsync(usuario, funcao);
-
             }
             catch (Exception ex)
             {
+
                 throw ex;
             }
-
         }
 
         public async Task LogarUsuario(Usuario usuario, bool lembrar)
@@ -52,23 +52,23 @@ namespace Condominio.DAL.Repositorio
             try
             {
                 await _gerenciadorLogin.SignInAsync(usuario, lembrar);
-
             }
             catch (Exception ex)
             {
+
                 throw ex;
             }
         }
 
-        public  int VerificarExisteRegistro()
+        public int VerificarseExisteRegistro()
         {
             try
             {
                 return _contexto.Tb_Usuarios.Count();
-
             }
             catch (Exception ex)
             {
+
                 throw ex;
             }
         }

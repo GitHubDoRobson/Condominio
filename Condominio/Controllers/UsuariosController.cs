@@ -50,10 +50,9 @@ namespace Condominio.Controllers
                 Usuario usuario = new Usuario();
                 IdentityResult usuarioCriado;
 
-                //criação de perfil dos usuários
-                if (_usuarioRepositorio.VerificarExisteRegistro() == 0)
+                if (_usuarioRepositorio.VerificarseExisteRegistro() == 0)
                 {
-                    usuario.UserName = model.Nome; //UserName é um atributo do Identity
+                    usuario.UserName = model.Nome;
                     usuario.CPF = model.CPF;
                     usuario.Email = model.Email;
                     usuario.PhoneNumber = model.Telefone;
@@ -65,18 +64,19 @@ namespace Condominio.Controllers
 
                     if (usuarioCriado.Succeeded)
                     {
-                        await _usuarioRepositorio.IncluirUsuarioFuncao(usuario, "Administrador");
+                        await _usuarioRepositorio.IncluirUsuarioEmFuncao(usuario, "Administrador");
                         await _usuarioRepositorio.LogarUsuario(usuario, false);
                         return RedirectToAction("Index", "Usuarios");
                     }
+
                 }
-                usuario.UserName = model.Nome; //UserName é um atributo do Identity
+                usuario.UserName = model.Nome;
                 usuario.CPF = model.CPF;
                 usuario.Email = model.Email;
                 usuario.PhoneNumber = model.Telefone;
                 usuario.Foto = model.Foto;
                 usuario.PrimeiroAcesso = true;
-                usuario.Status = StatusConta.Aprovado;
+                usuario.Status = StatusConta.Analisando;
 
                 usuarioCriado = await _usuarioRepositorio.CriarUsuario(usuario, model.Senha);
 
@@ -95,6 +95,7 @@ namespace Condominio.Controllers
             }
             return View(model);
         }
+
         public IActionResult Analise(string nome)
         {
             return View(nome);

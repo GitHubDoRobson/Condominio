@@ -23,12 +23,12 @@ namespace Condominio.DAL.Repositorio
             {
                 _contexto.Set<TEntity>().Update(entity);
                 await _contexto.SaveChangesAsync();
-
-            }catch (Exception ex)
+            }
+            catch (Exception ex)
             {
+
                 throw ex;
             }
-            
         }
 
         public async Task Excluir(TEntity entity)
@@ -37,27 +37,10 @@ namespace Condominio.DAL.Repositorio
             {
                 _contexto.Set<TEntity>().Remove(entity);
                 await _contexto.SaveChangesAsync();
-
             }
             catch (Exception ex)
             {
-                throw ex;
-            }
 
-        }
-
-        public async Task Excluir(string id)
-        {
-            try
-            {
-                var entity = await PegarPeloId(id);
-                _contexto.Set<TEntity>().Remove(entity);
-                await _contexto.SaveChangesAsync();
-
-
-            }
-            catch (Exception ex)
-            {
                 throw ex;
             }
         }
@@ -69,11 +52,25 @@ namespace Condominio.DAL.Repositorio
                 var entity = await PegarPeloId(id);
                 _contexto.Set<TEntity>().Remove(entity);
                 await _contexto.SaveChangesAsync();
-
-
             }
             catch (Exception ex)
             {
+
+                throw ex;
+            }
+        }
+
+        public async Task Excluir(string id)
+        {
+            try
+            {
+                var entity = await PegarPeloId(id);
+                _contexto.Set<TEntity>().Remove(entity);
+                await _contexto.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+
                 throw ex;
             }
         }
@@ -88,30 +85,36 @@ namespace Condominio.DAL.Repositorio
             }
             catch (Exception ex)
             {
+
+                throw ex;
+            }
+
+        }
+
+        public async Task<TEntity> PegarPeloId(int Id)
+        {
+            try
+            {
+                return await _contexto.Set<TEntity>().FindAsync(Id);
+
+            }
+            catch (Exception ex)
+            {
+
                 throw ex;
             }
         }
 
-        public async Task<TEntity> PegarPeloId(string id)
+        public async Task<TEntity> PegarPeloId(string Id)
         {
             try
             {
-                return await _contexto.Set<TEntity>().FindAsync(id);
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
+                return await _contexto.Set<TEntity>().FindAsync(Id);
 
-        public async Task<TEntity> PegarPeloId(int id)
-        {
-            try
-            {
-                return await _contexto.Set<TEntity>().FindAsync(id);
             }
             catch (Exception ex)
             {
+
                 throw ex;
             }
         }
@@ -121,10 +124,11 @@ namespace Condominio.DAL.Repositorio
             try
             {
                 return await _contexto.Set<TEntity>().ToListAsync();
-
-            }catch (Exception ex)
+            }
+            catch (Exception ex)
             {
-                throw ex;  
+
+                throw ex;
             }
         }
     }

@@ -13,6 +13,7 @@ builder.Services.AddDbContext<Contexto>(options =>
 builder.Services.AddIdentity<Usuario, Funcao>().AddEntityFrameworkStores<Contexto>();
 
 builder.Services.AddAuthentication();
+builder.Services.AddAuthorization();
 
 
 

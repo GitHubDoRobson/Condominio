@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Condominio.DAL.Migrations
 {
-    public partial class CRIACAODB : Migration
+    public partial class criacaoTeste : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -361,9 +361,9 @@ namespace Condominio.DAL.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Descricao", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "33d5d36e-332c-42cb-a61c-5d1a80826cd0", "fd7fc958-1c48-45be-ae07-2b294ad4bb9d", "Síndico do prédio", "Sindico", "SINDICO" },
-                    { "380277a8-fc49-4d8b-a4b7-7cb9c826ff30", "6fbca80f-1acf-407c-8fa1-20d62330e0a9", "Morador do prédio", "Morador", "MORADOR" },
-                    { "d5715c01-b0fc-4cc0-b82f-781f8367f889", "bf28c22c-3315-4ca8-b71f-69811c23b689", "Administrador do prédio", "Adminstrador", "Administrador" }
+                    { "404cfb5c-b1fb-4926-822b-6b094a91b2f7", "c6615518-faca-4d66-912c-d2ca5c46ab84", "Administrador do prédio", "Adminstrador", "Administrador" },
+                    { "6767ddd9-890e-4199-85c4-a23bb9b2e127", "127960e1-b89c-46d0-888d-18bdeb845186", "Morador do prédio", "Morador", "MORADOR" },
+                    { "94045ff7-900a-487f-85d7-454e13ef074a", "8f08f628-4a0d-49a7-b1ee-82d2f2b8e954", "Síndico do prédio", "Sindico", "SINDICO" }
                 });
 
             migrationBuilder.InsertData(

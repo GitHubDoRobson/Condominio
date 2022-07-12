@@ -27,7 +27,7 @@
             <h5>Novo Morador</h5>
         </div>
         <div>
-            <form asp-action="Registro" enctype="multipart/form-data">
+            <form asp-controller="Usuarios" asp-action="Registro" enctype="multipart/form-data">
                 <div class="campos">
                     <div class="red-text text-darken-4" asp-validation-summary="ModelOnly"></div>
                     <div class="row">
@@ -93,7 +93,7 @@
                 </div>
                 <div class="botoes">
                     <button type="submit" class="waves-effect waves-light btn-small green darken-4">Registrar</button>&emsp;
-                    <a asp-controller="Usuarios" asp-action="login"> Já possuo uma conta</a>
+                    <a asp-controller="Usuarios" asp-action="login"> Já possuo uma conta!</a>
                 </div>
             </form>
         </div>

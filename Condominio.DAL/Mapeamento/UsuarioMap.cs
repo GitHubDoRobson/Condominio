@@ -14,7 +14,7 @@ namespace Condominio.DAL.Mapeamento
         public void Configure(EntityTypeBuilder<Usuario> builder)
         {
             builder.Property(u => u.Id).ValueGeneratedOnAdd();
-            builder.Property(u => u.CPF).IsRequired().HasMaxLength(13);
+            builder.Property(u => u.CPF).IsRequired().HasMaxLength(14);
             builder.HasIndex(u => u.CPF).IsUnique();
             builder.Property(u => u.Foto).IsRequired();
             builder.Property(u => u.PrimeiroAcesso).IsRequired();

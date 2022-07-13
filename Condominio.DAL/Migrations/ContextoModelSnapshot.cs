@@ -142,24 +142,24 @@ namespace Condominio.DAL.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "6767ddd9-890e-4199-85c4-a23bb9b2e127",
-                            ConcurrencyStamp = "127960e1-b89c-46d0-888d-18bdeb845186",
+                            Id = "e45da449-68f9-4f1e-9265-03f6460c05d3",
+                            ConcurrencyStamp = "4a441569-40a8-46ba-b562-1cc81def6ce4",
                             Descricao = "Morador do prédio",
                             Name = "Morador",
                             NormalizedName = "MORADOR"
                         },
                         new
                         {
-                            Id = "94045ff7-900a-487f-85d7-454e13ef074a",
-                            ConcurrencyStamp = "8f08f628-4a0d-49a7-b1ee-82d2f2b8e954",
+                            Id = "b13fc56b-fa26-47cb-856a-a10cba1d2d27",
+                            ConcurrencyStamp = "67baecf3-69f2-4d40-93de-805cff6cf8b3",
                             Descricao = "Síndico do prédio",
                             Name = "Sindico",
                             NormalizedName = "SINDICO"
                         },
                         new
                         {
-                            Id = "404cfb5c-b1fb-4926-822b-6b094a91b2f7",
-                            ConcurrencyStamp = "c6615518-faca-4d66-912c-d2ca5c46ab84",
+                            Id = "e9519a87-42ec-49e9-a285-2c1e0675a143",
+                            ConcurrencyStamp = "2be455c7-a21f-460b-b722-eb2922f60579",
                             Descricao = "Administrador do prédio",
                             Name = "Adminstrador",
                             NormalizedName = "Administrador"
@@ -368,8 +368,8 @@ namespace Condominio.DAL.Migrations
 
                     b.Property<string>("CPF")
                         .IsRequired()
-                        .HasMaxLength(13)
-                        .HasColumnType("nvarchar(13)");
+                        .HasMaxLength(14)
+                        .HasColumnType("nvarchar(14)");
 
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()

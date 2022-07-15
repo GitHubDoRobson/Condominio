@@ -12,6 +12,7 @@ namespace Condominio.ViewModels
         public string CPF { get; set; }
 
         [Required(ErrorMessage = "O campo {0} é obrigátorio")]
+        [Display (Name ="Celular")]
         public string Telefone { get; set; }
 
 

@@ -24,7 +24,7 @@
 
     <div class="registroform">
         <div class="center-align">
-            <h4><i class="large material-icons">account_circle</i></h4>
+            <h4><i class="large material-icons greenIcon">account_circle</i></h4>
             <h5>Novo morador</h5>
         </div>
         <div>
@@ -59,7 +59,7 @@
 
                     <div class="row">
                         <div class="file-field input-field col s12">
-                            <div class="btn-small">
+                            <div class="btn waves-effect waves-light light-green darken-4">
                                 <span>Selecione sua foto</span>
                                 <input asp-for="Foto" type="file" class="validate" id="foto" />
                             </div>
@@ -74,7 +74,7 @@
                     <div class="row">
                         <div class="input-field col s12">
                             <input asp-for="Email" class="validate" type="email" id="Email" />
-                            <label asp-for="Email" id="Email"></label>
+                            <label asp-for="Email" id="Email">E-mail</label>
                             <span asp-validation-for="Email" class="red-text text-darken-4"></span>
                         </div>
                     </div>
@@ -98,7 +98,10 @@
 
 
                 <div class="botoes">
-                    <button type="submit" class="waves-effect waves-light btn-small green darken-4">Registrar</button> &emsp;
+                    @*<button type="submit" class="waves-effect waves-light btn-small green darken-4">Registrar</button> &emsp;*@
+                    <button class="btn waves-effect waves-light light-green darken-4" type="submit" name="action">
+                        Registrar
+                    </button>
                     <a asp-controller="Usuarios" asp-action="Login">Já possuo uma conta</a>
                 </div>
 

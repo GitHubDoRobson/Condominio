@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nNMLn/3DdR/QKqE9eTC9WKB6B99ptF6KJIXVjTTT6tk=",
+  "Hash": "CnFCd8NUDYLs3H5NHbw31d6pzYi2lbIMk89tJEhnbhQ=",
   "Source": "Condominio",
   "BasePath": "_content/Condominio",
   "Mode": "Default",
@@ -102,6 +102,23 @@
       "OriginalItemSpec": "wwwroot\\Imagens\\1c016657-d705-433b-a2c7-6d6a8d02ef7dhospitalar.jpeg"
     },
     {
+      "Identity": "C:\\SistemaCurso\\Condominio\\Condominio\\wwwroot\\Imagens\\28e615bb-09eb-4c96-8a0a-ebbf34f6d2e2logo ST - SIRES- x5.jpg",
+      "SourceId": "Condominio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\SistemaCurso\\Condominio\\Condominio\\wwwroot\\",
+      "BasePath": "_content/Condominio",
+      "RelativePath": "Imagens/28e615bb-09eb-4c96-8a0a-ebbf34f6d2e2logo ST - SIRES- x5.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Imagens\\28e615bb-09eb-4c96-8a0a-ebbf34f6d2e2logo ST - SIRES- x5.jpg"
+    },
+    {
       "Identity": "C:\\SistemaCurso\\Condominio\\Condominio\\wwwroot\\Imagens\\2c332219-cfdc-4262-96af-2082e3e1e573hospitalar.jpeg",
       "SourceId": "Condominio",
       "SourceType": "Discovered",
@@ -185,6 +202,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Imagens\\762e3277-3288-4291-894c-05da21d679a9LogoCASP.jpg"
+    },
+    {
+      "Identity": "C:\\SistemaCurso\\Condominio\\Condominio\\wwwroot\\Imagens\\7704f89a-dfa0-4998-a4cd-7adf6d0e427elogo ST - SIRES- x5.cdr",
+      "SourceId": "Condominio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\SistemaCurso\\Condominio\\Condominio\\wwwroot\\",
+      "BasePath": "_content/Condominio",
+      "RelativePath": "Imagens/7704f89a-dfa0-4998-a4cd-7adf6d0e427elogo ST - SIRES- x5.cdr",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Imagens\\7704f89a-dfa0-4998-a4cd-7adf6d0e427elogo ST - SIRES- x5.cdr"
     },
     {
       "Identity": "C:\\SistemaCurso\\Condominio\\Condominio\\wwwroot\\Imagens\\9e1d844a-1ff2-4feb-b9b4-66335283274dhospitalar.jpeg",

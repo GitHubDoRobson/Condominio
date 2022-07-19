@@ -2,6 +2,7 @@ using Condominio.BLL.Models;
 using Condominio.DAL;
 using Condominio.DAL.Interface;
 using Condominio.DAL.Repositorio;
+using Condominio.Extensions;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -17,7 +18,12 @@ builder.Services.AddAuthorization();
 
 
 
-builder.Services.AddTransient<IUsuarioRepositorio, UsuarioRepositorio>();
+//Configuração de repositórios
+builder.Services.ConfiguracaoRepositorios();
+builder.Services.ConfigurarCookies();
+builder.Services.ConfigurarNomeUsuario();
+builder.Services.ConfigurarSenhaUsuario();
+
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

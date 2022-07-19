@@ -14,5 +14,7 @@ namespace Condominio.DAL.Interface
         Task LogarUsuario(Usuario usuario, bool lembrar);
         Task<IdentityResult> CriarUsuario(Usuario usuario, string senha);
         Task IncluirUsuarioEmFuncao(Usuario usuario, string funcao);
+
+        Task <Usuario> PegarUsuarioPeloEmail(string email);
     }
 }

@@ -59,6 +59,19 @@ namespace Condominio.DAL.Repositorio
                 throw ex;
             }
         }
+        public async Task DeslogarUsuario()
+        {
+            try
+            {
+                await _gerenciadorLogin.SignOutAsync();
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
 
         public async Task<Usuario> PegarUsuarioPeloEmail(string email)
         {

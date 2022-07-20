@@ -26,6 +26,7 @@ namespace Condominio.Controllers
         [HttpGet]
         public IActionResult Registro()
         {
+
             return View();
         }
 
@@ -97,8 +98,12 @@ namespace Condominio.Controllers
         }
 
         [HttpGet]
-        public IActionResult Login()
+        public async Task <IActionResult> Login()
         {
+            if (User.Identity.IsAuthenticated)
+
+                await _usuarioRepositorio.DeslogarUsuario();
+
             return View();
         }
 
@@ -137,7 +142,7 @@ namespace Condominio.Controllers
 
                         else
                         {
-                            ModelState.AddModelError("", "Usuário e/ou senha inválidos!");
+                            ModelState.AddModelError("", "E-mail e/ou senha inválidos!");
                             return View(model);
                         }
                     }
@@ -145,7 +150,7 @@ namespace Condominio.Controllers
 
                 else
                 {
-                    ModelState.AddModelError("", "Usuário e/ou senha inválidos!");
+                    ModelState.AddModelError("", "E-mail e/ou senha inválidos!");
                     return View(model);
                 }
             }
@@ -155,7 +160,12 @@ namespace Condominio.Controllers
                 return View(model);
             }
         }
-
+        [HttpPost]
+        public async Task<IActionResult> Logout()
+        {
+            await _usuarioRepositorio.DeslogarUsuario();
+            return RedirectToAction("Login");
+        }
         public IActionResult Analise(string nome)
         {
             return View(nome);

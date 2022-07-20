@@ -27,6 +27,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/SistemaCurso/Condominio/Condominio/Views/Shared/_Confirmacoes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Db25maXJtYWNvZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/SistemaCurso/Condominio/Condominio/Views/Shared/_logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9sb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

@@ -99,5 +99,32 @@ namespace Condominio.DAL.Repositorio
                 throw ex;
             }
         }
+
+        public async Task AtualizarUsuario(Usuario usuario)
+        {
+            try
+            {
+                await _gerenciadorUsuarios.UpdateAsync(usuario);
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            
+        }
+        public async Task<Usuario> PegarUsuarioPeloId(string usuarioId)
+        {
+            try
+            {
+                return await _gerenciadorUsuarios.FindByIdAsync(usuarioId);
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
     }
 }

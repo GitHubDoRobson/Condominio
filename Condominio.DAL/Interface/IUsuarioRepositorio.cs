@@ -19,5 +19,9 @@ namespace Condominio.DAL.Interface
 
         Task <Usuario> PegarUsuarioPeloEmail(string email);
 
+        Task AtualizarUsuario (Usuario usuario);
+        Task<Usuario> PegarUsuarioPeloId(string usuarioId); 
+
+
     }
 }

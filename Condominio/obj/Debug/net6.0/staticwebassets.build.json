@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7DnBvNIA9xpybjnTFJ/dcx9/2McjJbh3hg5EtBMfyA8=",
+  "Hash": "I1da0KQf74WbqygOxpeflFgNLyJ00zJ3nY5KIocd4Vw=",
   "Source": "Condominio",
   "BasePath": "_content/Condominio",
   "Mode": "Default",
@@ -338,6 +338,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\IniciarMascaras.js"
+    },
+    {
+      "Identity": "C:\\SistemaCurso\\Condominio\\Condominio\\wwwroot\\js\\OperacaoUsuario.js",
+      "SourceId": "Condominio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\SistemaCurso\\Condominio\\Condominio\\wwwroot\\",
+      "BasePath": "_content/Condominio",
+      "RelativePath": "js/OperacaoUsuario.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\OperacaoUsuario.js"
     },
     {
       "Identity": "C:\\SistemaCurso\\Condominio\\Condominio\\wwwroot\\js\\OperacoesUsuario.js",

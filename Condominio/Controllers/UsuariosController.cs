@@ -10,11 +10,13 @@ namespace Condominio.Controllers
     public class UsuariosController : Controller
     {
         private readonly IUsuarioRepositorio _usuarioRepositorio;
+        private readonly IFuncaoRepositorio _funcaoRepositorio;
         private readonly IWebHostEnvironment _webHostEnvironment;
 
-        public UsuariosController(IUsuarioRepositorio usuarioRepositorio, IWebHostEnvironment webHostEnvironment)
+        public UsuariosController(IUsuarioRepositorio usuarioRepositorio, IFuncaoRepositorio funcaoRepositorio, IWebHostEnvironment webHostEnvironment)
         {
             _usuarioRepositorio = usuarioRepositorio;
+            _funcaoRepositorio = funcaoRepositorio;
             _webHostEnvironment = webHostEnvironment;
         }
 
@@ -191,6 +193,43 @@ namespace Condominio.Controllers
             await _usuarioRepositorio.AtualizarUsuario(usuario);
 
             return Json(true);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GerenciarUsuario(string usuarioId, string nome)
+        {
+            if (usuarioId == null)
+                return NotFound();
+
+            TempData["usuarioId"] = usuarioId;
+            ViewBag.Nome = nome;
+            Usuario usuario = await _usuarioRepositorio.PegarPeloId(usuarioId);
+
+            if (usuarioId == null)
+                return NotFound();
+
+            List<FuncaoUsuarioViewModel> viewModel = new List<FuncaoUsuarioViewModel>();
+
+            foreach (Funcao funcao in await _funcaoRepositorio.PegarTodos())
+            {
+                FuncaoUsuarioViewModel model = new FuncaoUsuarioViewModel()
+                {
+                    FuncaoId = funcao.Id,
+                    Nome = funcao.Name,
+                    Descricao = funcao.Descricao
+                
+                };
+                if (await _usuarioRepositorio.VerificarSeUsuarioEstaEmFuncao(usuario, funcao.Name))
+                {
+                    model.isSelecionado = true;
+
+                }
+                else
+                model.isSelecionado = false;
+
+                viewModel.Add(model);                
+            }
+            return View(viewModel); 
         }
     }
 }

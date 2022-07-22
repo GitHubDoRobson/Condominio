@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "I1da0KQf74WbqygOxpeflFgNLyJ00zJ3nY5KIocd4Vw=",
+  "Hash": "68YoZfBSpSG3+BgYjrvJbNhezhlqfT0V/E1whkyG6aI=",
   "Source": "Condominio",
   "BasePath": "_content/Condominio",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\SistemaCurso\\Condominio\\Condominio\\wwwroot\\Imagens\\1836f545-57de-4743-839a-ca7397b607fbhospitalar.jpeg",
+      "SourceId": "Condominio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\SistemaCurso\\Condominio\\Condominio\\wwwroot\\",
+      "BasePath": "_content/Condominio",
+      "RelativePath": "Imagens/1836f545-57de-4743-839a-ca7397b607fbhospitalar.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Imagens\\1836f545-57de-4743-839a-ca7397b607fbhospitalar.jpeg"
     },
     {
       "Identity": "C:\\SistemaCurso\\Condominio\\Condominio\\wwwroot\\Imagens\\1c016657-d705-433b-a2c7-6d6a8d02ef7dhospitalar.jpeg",
@@ -338,23 +355,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\IniciarMascaras.js"
-    },
-    {
-      "Identity": "C:\\SistemaCurso\\Condominio\\Condominio\\wwwroot\\js\\OperacaoUsuario.js",
-      "SourceId": "Condominio",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\SistemaCurso\\Condominio\\Condominio\\wwwroot\\",
-      "BasePath": "_content/Condominio",
-      "RelativePath": "js/OperacaoUsuario.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\OperacaoUsuario.js"
     },
     {
       "Identity": "C:\\SistemaCurso\\Condominio\\Condominio\\wwwroot\\js\\OperacoesUsuario.js",

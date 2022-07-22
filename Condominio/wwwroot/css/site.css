@@ -11,14 +11,14 @@
     top: 40%;
     left: 50%;
     margin: -200px 0 0 -300px;
-    background-color: #f0f4c3;
+    background-color: #f1f8e9;
     padding-bottom: 35px;
     padding-top: 35px;
     padding-left: 35px;
     padding-right: 35px;
 }
 
-.loginform{
+.loginform {
     position: absolute;
     width: 40%;
     height: 550px;
@@ -26,7 +26,7 @@
     top: 40%;
     left: 50%;
     margin: -200px 0 0 -300px;
-    background-color: #f0f4c3;
+    background-color: #f1f8e9;
     padding-bottom: 35px;
     padding-top: 35px;
     padding-left: 35px;
@@ -36,6 +36,11 @@
 .greenIcon {
     color: #1c4c36;
 }
+
+.fundo {
+    background-color: #1c4c36;
+}
+
 
 
 

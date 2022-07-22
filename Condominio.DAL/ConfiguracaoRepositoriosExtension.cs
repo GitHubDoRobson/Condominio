@@ -14,6 +14,8 @@ namespace Condominio.DAL
         public static void ConfiguracaoRepositorios(this IServiceCollection services)        {
 
             services.AddTransient<IUsuarioRepositorio, UsuarioRepositorio>();            
+            services.AddTransient<IFuncaoRepositorio, FuncaoRepositorio>();
+            
         }
     }
 }

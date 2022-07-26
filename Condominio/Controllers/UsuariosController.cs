@@ -231,5 +231,39 @@ namespace Condominio.Controllers
             }
             return View(viewModel); 
         }
+
+        [HttpPost]
+        public async Task<IActionResult> GerenciarUsuario(List<FuncaoUsuarioViewModel> model)
+        {
+            string usuarioId = TempData["usuarioId"].ToString();
+
+            Usuario usuario = await _usuarioRepositorio.PegarPeloId(usuarioId);
+
+            if (usuario == null)
+                return NotFound();
+
+            IEnumerable<string> funcoes = await _usuarioRepositorio.PegarFuncoesUsuario(usuario);
+            IdentityResult resultado = await _usuarioRepositorio.RemoverFuncoesUsuario(usuario, funcoes);
+
+            if (!resultado.Succeeded)
+            {
+                ModelState.AddModelError("", "Não foi possível atualizar as funções do usuários");
+                TempData["Exclusao"] = $"Não foi possível atualizar as funções do usuário {usuario.UserName}";
+                return View("GerenciarUsuario", usuarioId);
+            }
+
+            resultado = await _usuarioRepositorio.IncluirUsuarioEmFuncoes(usuario,
+                model.Where(x => x.isSelecionado == true).Select(x => x.Nome));
+
+            if (!resultado.Succeeded)
+            {
+                ModelState.AddModelError("", "Não foi possível atualizar as funções do usuários");
+                TempData["Exclusao"] = $"Não foi possível atualizar as funções do usuário {usuario.UserName}";
+                return View("GerenciarUsuario", usuarioId);
+            }
+
+            TempData["Atualizacao"] = $"As funções do usuário {usuario.UserName} foram atualizadas";
+            return RedirectToAction(nameof(Index));
+        }
     }
 }

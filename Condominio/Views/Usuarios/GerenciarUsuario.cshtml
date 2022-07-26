@@ -1,16 +1,14 @@
-﻿@model List<Condominio.ViewModels.FuncaoUsuarioViewModel>
-
+﻿@model List<Condominio.ViewModels.FuncaoUsuariosViewModel>
 @{
-    ViewData["Title"] = "Atualizar funcões do usuário" + @ViewBag.Nome;
+    ViewData["Title"] = "Atualizar funcões do usuário " + @ViewBag.Nome;
 }
-
 
 <form asp-action="GerenciarUsuario" method="post">
     <div asp-validation-summary="All"></div>
 
     <div class="collection with-header">
-        <div class="collection-header light-green accent-1>
-            <h6 class="white-text">Funções usuário</h6>
+        <div class="collection-header light-green accent-1">
+            <h6 class="black-text">Atualizar funções do usuário @ViewBag.Nome</h6>
         </div>
 
         <div class="collection-item">
@@ -27,7 +25,7 @@
         </div>
 
         <div class="collection-item">
-            <input type="submit" value="Atualizar" class="btn-small green darken-3" /> &emsp;
+            <input type="submit" value="Atualizar" class="btn-small blue darken-3" /> &emsp;
             <a asp-controller="Usuarios" asp-action="Index">Voltar</a>
         </div>
 

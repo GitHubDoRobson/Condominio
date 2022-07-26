@@ -208,11 +208,11 @@ namespace Condominio.Controllers
             if (usuarioId == null)
                 return NotFound();
 
-            List<FuncaoUsuarioViewModel> viewModel = new List<FuncaoUsuarioViewModel>();
+            List<FuncaoUsuariosViewModel> viewModel = new List<FuncaoUsuariosViewModel>();
 
             foreach (Funcao funcao in await _funcaoRepositorio.PegarTodos())
             {
-                FuncaoUsuarioViewModel model = new FuncaoUsuarioViewModel()
+                FuncaoUsuariosViewModel model = new FuncaoUsuariosViewModel()
                 {
                     FuncaoId = funcao.Id,
                     Nome = funcao.Name,
@@ -233,7 +233,7 @@ namespace Condominio.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> GerenciarUsuario(List<FuncaoUsuarioViewModel> model)
+        public async Task<IActionResult> GerenciarUsuario(List<FuncaoUsuariosViewModel> model)
         {
             string usuarioId = TempData["usuarioId"].ToString();
 

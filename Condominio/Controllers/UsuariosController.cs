@@ -205,31 +205,32 @@ namespace Condominio.Controllers
             ViewBag.Nome = nome;
             Usuario usuario = await _usuarioRepositorio.PegarPeloId(usuarioId);
 
-            if (usuarioId == null)
+            if (usuario == null)
                 return NotFound();
 
             List<FuncaoUsuariosViewModel> viewModel = new List<FuncaoUsuariosViewModel>();
 
             foreach (Funcao funcao in await _funcaoRepositorio.PegarTodos())
             {
-                FuncaoUsuariosViewModel model = new FuncaoUsuariosViewModel()
+                FuncaoUsuariosViewModel model = new FuncaoUsuariosViewModel
                 {
                     FuncaoId = funcao.Id,
                     Nome = funcao.Name,
                     Descricao = funcao.Descricao
-                
                 };
+
                 if (await _usuarioRepositorio.VerificarSeUsuarioEstaEmFuncao(usuario, funcao.Name))
                 {
                     model.isSelecionado = true;
-
                 }
-                else
-                model.isSelecionado = false;
 
-                viewModel.Add(model);                
+                else
+                    model.isSelecionado = false;
+
+                viewModel.Add(model);
             }
-            return View(viewModel); 
+
+            return View(viewModel);
         }
 
         [HttpPost]

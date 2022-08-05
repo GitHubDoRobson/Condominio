@@ -1,6 +1,7 @@
 ﻿@model List<Condominio.ViewModels.FuncaoUsuariosViewModel>
 @{
     ViewData["Title"] = "Atualizar funcões do usuário " + @ViewBag.Nome;
+
 }
 
 <form asp-action="GerenciarUsuario" method="post">
@@ -10,17 +11,17 @@
         <div class="collection-header light-green accent-1">
             <h6 class="black-text">Atualizar funções do usuário @ViewBag.Nome</h6>
         </div>
-
         <div class="collection-item">
-            @for(int i = 0; i < Model.Count(); i++)
+
+            @for (int i = 0; i < Model.Count(); i++)
             {
-            <label>
-                <input type="checkbox" asp-for="@Model[i].isSelecionado" />
-                <span asp-for="@Model[i].isSelecionado">@Model[i].Nome - @Model[i].Descricao</span>
+
+                <input type="checkbox" asp-for="@Model[i].isSelecionado" id="@Model[i].Nome" />
+                <label for="@Model[i].Nome" asp-for="@Model[i].isSelecionado">@Model[i].Nome - @Model[i].Descricao</label>
                 <input type="hidden" asp-for="@Model[i].FuncaoId" />
                 <input type="hidden" asp-for="@Model[i].Nome" />
-            </label>
-            <br />
+
+                <br />
             }
         </div>
 
@@ -31,5 +32,5 @@
 
     </div>
 
-
 </form>
+

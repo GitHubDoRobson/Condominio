@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "68YoZfBSpSG3+BgYjrvJbNhezhlqfT0V/E1whkyG6aI=",
+  "Hash": "+fKga6okAqmDW8sHHLRrWV3QWiS+GUQy2SZ4zSawxT8=",
   "Source": "Condominio",
   "BasePath": "_content/Condominio",
   "Mode": "Default",
@@ -85,6 +85,23 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\SistemaCurso\\Condominio\\Condominio\\wwwroot\\Imagens\\08d3bbf7-f760-47e5-8f4c-cba4ba50f2c7hospitalar.jpeg",
+      "SourceId": "Condominio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\SistemaCurso\\Condominio\\Condominio\\wwwroot\\",
+      "BasePath": "_content/Condominio",
+      "RelativePath": "Imagens/08d3bbf7-f760-47e5-8f4c-cba4ba50f2c7hospitalar.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Imagens\\08d3bbf7-f760-47e5-8f4c-cba4ba50f2c7hospitalar.jpeg"
+    },
+    {
       "Identity": "C:\\SistemaCurso\\Condominio\\Condominio\\wwwroot\\Imagens\\1836f545-57de-4743-839a-ca7397b607fbhospitalar.jpeg",
       "SourceId": "Condominio",
       "SourceType": "Discovered",
@@ -151,6 +168,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Imagens\\2c332219-cfdc-4262-96af-2082e3e1e573hospitalar.jpeg"
+    },
+    {
+      "Identity": "C:\\SistemaCurso\\Condominio\\Condominio\\wwwroot\\Imagens\\4135a12a-f7cc-4534-8233-6c7266168904hospitalar.jpeg",
+      "SourceId": "Condominio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\SistemaCurso\\Condominio\\Condominio\\wwwroot\\",
+      "BasePath": "_content/Condominio",
+      "RelativePath": "Imagens/4135a12a-f7cc-4534-8233-6c7266168904hospitalar.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Imagens\\4135a12a-f7cc-4534-8233-6c7266168904hospitalar.jpeg"
     },
     {
       "Identity": "C:\\SistemaCurso\\Condominio\\Condominio\\wwwroot\\Imagens\\4bfdb429-885e-4c8d-9424-bc2bf604ed45hospitalar.jpeg",
@@ -272,6 +306,23 @@
       "OriginalItemSpec": "wwwroot\\Imagens\\a61eb573-c9e9-4e58-971a-436cfce3d8aehospitalar.jpeg"
     },
     {
+      "Identity": "C:\\SistemaCurso\\Condominio\\Condominio\\wwwroot\\Imagens\\b20f04ae-51f3-445c-a48e-296991e3ea87Estande 2022.jpeg",
+      "SourceId": "Condominio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\SistemaCurso\\Condominio\\Condominio\\wwwroot\\",
+      "BasePath": "_content/Condominio",
+      "RelativePath": "Imagens/b20f04ae-51f3-445c-a48e-296991e3ea87Estande 2022.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Imagens\\b20f04ae-51f3-445c-a48e-296991e3ea87Estande 2022.jpeg"
+    },
+    {
       "Identity": "C:\\SistemaCurso\\Condominio\\Condominio\\wwwroot\\Imagens\\b9f0bca8-50bf-4a85-8597-19f8b822747aLOGO.jpg",
       "SourceId": "Condominio",
       "SourceType": "Discovered",
@@ -340,6 +391,23 @@
       "OriginalItemSpec": "wwwroot\\Imagens\\dabe2c59-53e6-44bf-bf20-fb757b0e49291 - Estande 2022.jpeg"
     },
     {
+      "Identity": "C:\\SistemaCurso\\Condominio\\Condominio\\wwwroot\\js\\1OperacoesUsuario.min.js",
+      "SourceId": "Condominio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\SistemaCurso\\Condominio\\Condominio\\wwwroot\\",
+      "BasePath": "_content/Condominio",
+      "RelativePath": "js/1OperacoesUsuario.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\1OperacoesUsuario.min.js"
+    },
+    {
       "Identity": "C:\\SistemaCurso\\Condominio\\Condominio\\wwwroot\\js\\IniciarMascaras.js",
       "SourceId": "Condominio",
       "SourceType": "Discovered",
@@ -372,6 +440,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\OperacoesUsuario.js"
+    },
+    {
+      "Identity": "C:\\SistemaCurso\\Condominio\\Condominio\\wwwroot\\js\\OperacoesUsuario.min.js",
+      "SourceId": "Condominio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\SistemaCurso\\Condominio\\Condominio\\wwwroot\\",
+      "BasePath": "_content/Condominio",
+      "RelativePath": "js/OperacoesUsuario.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\OperacoesUsuario.min.js"
     },
     {
       "Identity": "C:\\SistemaCurso\\Condominio\\Condominio\\wwwroot\\js\\site.js",
